@@ -17,6 +17,13 @@ pub fn make_subcommand() -> Command {
                 .value_name("chapter"),
         )
         .arg(
+            Arg::new("generate")
+                .long("generate")
+                .value_name("FILE")
+                .hide_short_help(true)
+                .hide_long_help(true)
+        )
+        .arg(
             Arg::new("library-path")
                 .short('L')
                 .long("library-path")
